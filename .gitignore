@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# Dataset
+data/raw/
+data/processed/
+
+# Model checkpoints
+outputs/
+models/
+*.bin
+*.pt
+*.safetensors
+
+# HuggingFace cache
+.cache/
+
+# Logs
+logs/
+*.log
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
