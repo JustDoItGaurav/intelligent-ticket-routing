@@ -10,7 +10,10 @@ import torch.nn.functional as F
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
-MODEL_PATH = "models/bert"
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "bert")
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 CATEGORIES = {
